@@ -19,6 +19,8 @@
 (add-hook 'auto-save-hook 'my-desktop-save)
 (setq desktop-path '("."))
 
+(add-hook 'after-init-hook #'global-flycheck-mode)
+
 (setq
  indent-tabs-mode nil
  kill-whole-line t
