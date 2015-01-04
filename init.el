@@ -10,6 +10,15 @@
 (global-ws-trim-mode t)
 (set-default 'ws-trim-level 0)
 
+(require 'desktop)
+(desktop-save-mode 1)
+(defun my-desktop-save ()
+  (interactive)
+  (if (eq (desktop-owner) (emacs-pid))
+      (desktop-save desktop-dirname)))
+(add-hook 'auto-save-hook 'my-desktop-save)
+(setq desktop-path '("."))
+
 (setq
  indent-tabs-mode nil
  kill-whole-line t
