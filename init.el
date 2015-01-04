@@ -2,6 +2,8 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
+(require 'color-theme)
+
 (setq
  indent-tabs-mode nil
  kill-whole-line t
