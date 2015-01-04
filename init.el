@@ -2,7 +2,8 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/") t)
 (package-initialize)
 
-(require 'color-theme)
+(add-to-list 'load-path "~/.emacs.d/tomorrow-theme")
+(require 'tomorrow-night-bright-theme)
 
 (setq
  indent-tabs-mode nil
