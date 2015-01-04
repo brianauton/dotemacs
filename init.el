@@ -10,6 +10,7 @@
  kill-whole-line t
  make-backup-files nil
  tab-width 2
+ vc-handled-backends nil
  )
 
 (menu-bar-mode -1)
