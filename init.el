@@ -27,6 +27,7 @@
  make-backup-files nil
  tab-width 2
  vc-handled-backends nil
+ read-file-name-completion-ignore-case nil
  )
 
 (menu-bar-mode -1)
