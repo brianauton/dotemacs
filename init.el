@@ -20,6 +20,9 @@
 (setq desktop-path '("."))
 
 (add-hook 'after-init-hook #'global-flycheck-mode)
+(eval-after-load 'flycheck '(progn
+  (set-face-attribute 'flycheck-warning nil :underline nil :foreground "orange")
+  (set-face-attribute 'flycheck-error nil :underline nil :foreground "red")))
 
 (setq
  indent-tabs-mode nil
