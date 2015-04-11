@@ -9,6 +9,7 @@
 (require 'ws-trim)
 (global-ws-trim-mode t)
 (set-default 'ws-trim-level 0)
+(set-default 'ws-trim-method-hook '(ws-trim-tabs ws-trim-trailing))
 
 (require 'desktop)
 (desktop-save-mode 1)
