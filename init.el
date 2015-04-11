@@ -45,3 +45,7 @@
 
 (require 'direx)
 (global-set-key (kbd "C-x C-g") 'direx-project:jump-to-project-root)
+(custom-set-variables
+ '(direx:closed-icon " ▸")
+ '(direx:leaf-icon "  ")
+ '(direx:open-icon " ▾"))
