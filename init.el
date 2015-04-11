@@ -42,3 +42,6 @@
     (let ((dir (file-name-directory filename)))
       (unless (file-exists-p dir)
 	(make-directory dir t)))))
+
+(require 'direx)
+(global-set-key (kbd "C-x C-g") 'direx-project:jump-to-project-root)
