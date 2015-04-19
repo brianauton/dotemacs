@@ -1,10 +1,9 @@
-;;; epl-autoloads.el --- automatically extracted autoloads
+;;; dash-autoloads.el --- automatically extracted autoloads
 ;;
 ;;; Code:
 (add-to-list 'load-path (or (file-name-directory #$) (car load-path)))
 
-;;;### (autoloads nil nil ("elpa/epl-20140823.609/epl.el") (21673
-;;;;;;  31116 898118 0))
+;;;### (autoloads nil nil ("dash.el") (21811 1279 75204 0))
 
 ;;;***
 
@@ -13,4 +12,4 @@
 ;; no-byte-compile: t
 ;; no-update-autoloads: t
 ;; End:
-;;; epl-autoloads.el ends here
+;;; dash-autoloads.el ends here
