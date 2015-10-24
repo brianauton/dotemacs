@@ -50,4 +50,5 @@
  '(direx:leaf-icon "  ")
  '(direx:open-icon " ▾"))
 
+(setq gofmt-command "goimports")
 (add-hook 'before-save-hook #'gofmt-before-save)
