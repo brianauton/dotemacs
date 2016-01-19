@@ -52,3 +52,11 @@
 
 (setq gofmt-command "goimports")
 (add-hook 'before-save-hook #'gofmt-before-save)
+
+(setq org-startup-indented t)
+(setq org-agenda-files '("~/Dropbox/work"))
+(setq org-agenda-skip-function-global '(org-agenda-skip-entry-if 'todo 'done))
+(setq org-agenda-window-setup 'current-window)
+(global-set-key (kbd "C-c a #") 'org-agenda-list-stuck-projects)
+(global-set-key (kbd "C-c a a") 'org-agenda-list)
+(global-set-key (kbd "C-c a t") 'org-todo-list)
