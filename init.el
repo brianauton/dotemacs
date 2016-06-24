@@ -68,6 +68,12 @@
 (setq auto-revert-verbose nil)
 (global-auto-revert-mode)
 
+(add-to-list 'load-path "~/.emacs.d/org-bullets")
+(require 'org-bullets)
+(setq org-bullets-face-name (quote org-bullet-face))
+(add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+(setq org-bullets-bullet-list '("￮"))
+
 (define-key input-decode-map "\e[1;10A" [S-M-up])
 (define-key input-decode-map "\e[1;10B" [S-M-down])
 (define-key input-decode-map "\e[1;10C" [S-M-right])
