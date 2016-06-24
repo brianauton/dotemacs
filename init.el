@@ -32,6 +32,7 @@
  tab-width 2
  vc-handled-backends nil
  read-file-name-completion-ignore-case nil
+ sentence-end-double-space nil
  )
 
 (menu-bar-mode -1)
