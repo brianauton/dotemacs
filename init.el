@@ -66,3 +66,8 @@
 (setq auto-revert-interval 2)
 (setq auto-revert-verbose nil)
 (global-auto-revert-mode)
+
+(define-key input-decode-map "\e[1;10A" [S-M-up])
+(define-key input-decode-map "\e[1;10B" [S-M-down])
+(define-key input-decode-map "\e[1;10C" [S-M-right])
+(define-key input-decode-map "\e[1;10D" [S-M-left])
