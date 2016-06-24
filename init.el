@@ -63,6 +63,7 @@
 (global-set-key (kbd "C-c a #") 'org-agenda-list-stuck-projects)
 (global-set-key (kbd "C-c a a") 'org-agenda-list)
 (global-set-key (kbd "C-c a t") 'org-todo-list)
+(setq org-todo-keywords '((sequence "WAIT" "TODO" "DONE")))
 (setq auto-revert-interval 2)
 (setq auto-revert-verbose nil)
 (global-auto-revert-mode)
