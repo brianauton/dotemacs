@@ -73,6 +73,18 @@
 (setq org-bullets-face-name (quote org-bullet-face))
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 (setq org-bullets-bullet-list '("￮"))
+(custom-set-faces
+ '(org-level-1 ((t (:foreground "#7aa6da" :weight bold))))
+ '(org-level-2 ((t (:foreground "#70c0b1" :weight bold))))
+ '(org-level-3 ((t (:foreground "#b9ca4a" :weight bold))))
+ '(org-level-4 ((t (:foreground "#e7c547" :weight bold))))
+ '(org-level-5 ((t (:foreground "#e78c45" :weight bold))))
+ '(org-level-6 ((t (:foreground "#d54e53" :weight bold))))
+ '(org-level-7 ((t (:foreground "#c397d8" :weight bold))))
+ '(org-level-8 ((t (:foreground "#4d5057" :weight bold))))
+ '(org-link ((t (:foreground "#c397d8"))))
+ '(org-todo ((t (:foreground "#d54e53" :weight bold))))
+ )
 
 (define-key input-decode-map "\e[1;10A" [S-M-up])
 (define-key input-decode-map "\e[1;10B" [S-M-down])
