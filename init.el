@@ -24,6 +24,7 @@
 (eval-after-load 'flycheck '(progn
   (set-face-attribute 'flycheck-warning nil :underline nil :foreground "orange")
   (set-face-attribute 'flycheck-error nil :underline nil :foreground "red")))
+(add-to-list 'auto-mode-alist '("\\.jsx$" . javascript-mode))
 
 (setq
  indent-tabs-mode nil
